@@ -28,9 +28,9 @@ The research project is structured across several sequential scripts:
 * **`hmm2.py`**: Expands to a **3-State Gaussian HMM** and introduces realistic transaction friction (5 basis points per unit of portfolio rebalance) and optimization tolerance tuning (`tol=1e-4`).
 
 
-* **`oos.py`**: Implements a rigorous **Out-of-Sample Walk-Forward Testing framework** with expanding training windows and diagonal covariance matrices (`covariance_type="diag"`) to eliminate look-ahead bias and handle extreme volatility shocks.
+* **`oos.py`**: Implements a rigorous **3-State Gaussian HMM** **Out-of-Sample Walk-Forward Testing framework** with expanding training windows and diagonal covariance matrices (`covariance_type="diag"`) to eliminate look-ahead bias and handle extreme volatility shocks.
 
-
+* **`oos2.py`**: Implements a rigorous **2-State Gaussian HMM** **Out-of-Sample Walk-Forward Testing framework** with expanding training windows and diagonal covariance matrices (`covariance_type="diag"`) to eliminate look-ahead bias and handle extreme volatility shocks.
 
 ---
 
@@ -52,7 +52,7 @@ The research project is structured across several sequential scripts:
 
 
 
-### 3. Out-of-Sample Walk-Forward Validation (`oos.py`)
+### 3. Out-of-Sample Walk-Forward Validation (`oos.py`, `oos2.py`)
 
 To prove the models were not overfitted to historical data, an expanding-window walk-forward validation framework was deployed, retraining the model year-by-year from 2019 to 2026 without future foresight.
 
