@@ -73,6 +73,28 @@ Below is the performance summary of the ultimate **Out-of-Sample Walk-Forward 2-
 
 ---
 
+## Other Useful Outputs:
+| Performance Metric (OOS Period) | Buy & Hold Benchmark | 3-State Walk-Forward HMM (OOS) |
+| --- | --- | --- |
+| **Final Portfolio Value** | **$3,055.40** | **$2,828.06** |
+| **Maximum Drawdown** | **-33.92%** | **-25.08%** |
+| **Sharpe Ratio** | **0.84** | **0.94** |
+
+
+| Performance Metric (Gaussian HMM) | Buy & Hold Benchmark | 3-State Gaussian Hidden Markov Model + Fees (Net) |
+| --- | --- | --- |
+| **Final Portfolio Value** | **$3,539.40** | **$3,344.03** |
+| **Maximum Drawdown** | **-33.92%** | **-19.65%** |
+| **Sharpe Ratio** | **0.80** | **1.08** |
+
+
+| Performance Metric (Gaussian HMM) | Buy & Hold Benchmark | 2-State Gaussian Hidden Markov Model |
+| --- | --- | --- |
+| **Final Portfolio Value** | **$3,539.40** | **$3,835.40** |
+| **Maximum Drawdown** | **-33.92%** | **-20.03%** |
+| **Sharpe Ratio** | **0.80** | **1.13** |
+---
+
 ## Conclusion & Verdict: Which Model is the Best?
 
 Among all models and iterations tested across this project, the **Out-of-Sample Walk-Forward 2-State Gaussian Hidden Markov Model (`hmm.py` / `oos.py`)** is unequivocally the **best-performing and most robust model**.
